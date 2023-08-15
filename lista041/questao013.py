@@ -3,12 +3,12 @@
 crescente
 '''
 
-# Solicita ao usuário três valores
+
 a = float(input("Digite o valor de a: "))
 b = float(input("Digite o valor de b: "))
 c = float(input("Digite o valor de c: "))
 
-# Ordena os valores em ordem crescente
+
 if a > b:
     a, b = b, a
 if b > c:
@@ -16,5 +16,5 @@ if b > c:
 if a > b:
     a, b = b, a
 
-# Exibe os valores em ordem crescente
+
 print("Os valores em ordem crescente são:", a, b, c)

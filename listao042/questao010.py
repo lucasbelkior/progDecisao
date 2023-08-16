@@ -11,16 +11,14 @@ nota1 = float(input("Digite a nota da prova 1: "))
 nota2 = float(input("Digite a nota da prova 2: "))
 
 media = (nota1 + nota2) / 2
-
-if media >= 6:
-    resultado = "Aprovado"
-elif media >= 4:
-    resultado = "Prova final"
+if(media < 3.0):
+    print("Sinto muito, mas infelizmente você está reprovado. Tente se esforçar mais na próxima.")
 else:
-    resultado = "Reprovado"
+    if(media < 6.9):
+        print("Parece que você está por um triz, ficou de Prova Final. Se dedique nessa reta final.")
+    else:
+        print("Você está aprovado! Meus parabéns Guerreiro.")
 
-    print(f"Média do aluno {nome_aluno}: {media:.2f}")
-    print(f"Resultado: {resultado}")
 
-
+print(f"Sua média equivale a {media}.")
 
